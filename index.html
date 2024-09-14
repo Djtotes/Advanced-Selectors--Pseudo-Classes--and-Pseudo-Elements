@@ -1,12 +1,53 @@
 <html>
     <head>
-        <style></style>
+        <style>
+            /*1)Advanced selector
+            a)attribute selector*/
+            input[type="text"]{
+                border:5px dotted grey
+            }
+
+            /*child selector*/
+            ol>li{color: darksalmon;}
+
+            /*sibling selector*/
+            h1+p{font-size:30px;}
+
+            /*2) pseudo classes hover*/
+            a:hover{color: darkslateblue;}
+
+            /*nth chile*/
+            li:nth-child(2){background-color: rgb(64, 184, 124);}
+
+            /*not selector*/
+            p:not(#i1){color: blue;}
+
+            /*2) pseudo elements befor*/
+            p:before{content:"Damn that's crazy"}
+
+            /*befor*/
+            p::after{content:"furrey"}
+
+            /*first letter*/
+            p::first-letter{font-size: 50px;}
+       </style>
+
     </head>
     <body>
-        <form>
+    <a href="#">Click here</a><br><br>   
+     <form>
             Name: <input type="text"><br><br>
             Age:<input type="number"><br><br>
-            Type:<input type="color">
+            Color type:<input type="color">
         </form>
-    </body>
+    <ol>
+      <li>Batman</li>
+    <li>Superman</li>
+    <li>Wonder woman</li>
+    <li>Flash</li>
+    </ol>
+    <h1>Hello</h1>
+    <p id="i1">Those are the Justice league members</p>
+    <p>Hope you know them?</p>    
+</body>
 </html>
